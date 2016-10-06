@@ -54,19 +54,3 @@ else {
   return 0; 
   } 
 }
-
-sub cheklink1 {
-my $h_name = shift;
-#my $pong = Net::Ping->new( $> ? "tcp" : "icmp" );
-my $pong = Net::Ping->new( "icmp" );
-(defined $pong) or die "Couldn't create Net::Ping object: $!\n";
-{$log->info("Pinging $h_name....");}
-if ($pong->ping($h_name)) {
-#	$log->info("OK");
-  return 1; #OK
-} else {
-  $log->err("Remote host unreachable");
-  return 0; 
-  }
-  
-}
