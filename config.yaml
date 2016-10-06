@@ -1,0 +1,6 @@
+---
+remotehost1: 192.168.21.222
+remotehost2: 192.168.21.250
+islinkupscript: linkup.sh
+islinkdownscript: linkdown.sh
+timeout: 60
