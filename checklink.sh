@@ -1,5 +1,6 @@
 #!/bin/sh
 
-# SOLO PROXY
-cd /home/etherproxy/ether-proxy
-sudo -u etherproxy screen -dmS proxy ./ether-proxy config.json
+#
+#cd /etc/openvpn/ovpn-scripts/checklink
+#sudo -u administrator screen -dmS checklink ./checklink.pl
+sudo -u administrator screen -dmS checklink ./checklink.pl
